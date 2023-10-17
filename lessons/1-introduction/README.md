@@ -28,3 +28,7 @@ Después de instalarlo, se recomienda dar valor a estos parámetros, ya que de l
     git config --global user.email "miemail@dominio.com"
 
 Estos comandos deben realizarse a través de la consola, en el caso de Windows sería CMD, PowerShell, Git Bash o Git CMD.
+
+## Referencias
+
+[Configuración de un repositorio](https://www.atlassian.com/es/git/tutorials/setting-up-a-repository)

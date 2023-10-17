@@ -10,3 +10,7 @@
 1. Introducción
 2. Trabajo en local
 3. Trabajo en remoto
+
+## Referencias generales
+
+[Documentación oficial de Atlassian](https://www.atlassian.com/es/git/tutorials)
