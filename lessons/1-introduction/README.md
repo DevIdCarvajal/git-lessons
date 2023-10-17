@@ -5,6 +5,7 @@
 [1. Definición y características](#1-definición-y-características)  
 [2. Instalación](#2-instalación)  
 [3. Configuración](#3-configuración)
+[4. Estructura de un repositorio](#4-estructura-de-un-repositorio)
 
 ## 1. Definición y características
 
@@ -29,6 +30,10 @@ Después de instalarlo, se recomienda dar valor a estos parámetros, ya que de l
 
 Estos comandos deben realizarse a través de la consola, en el caso de Windows sería CMD, PowerShell, Git Bash o Git CMD.
 
+## 4. Estructura de un repositorio
+
+![Flujo de trabajo](git-workflow1.png)
+
 ## Referencias
 
-[]()
+[Tutorial](https://www.diegocmartin.com/tutorial-git/)
