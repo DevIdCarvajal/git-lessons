@@ -1,4 +1,4 @@
-# 2. Conceptos básicos de control de versiones
+# 2. Trabajo en local
 
 ## Índice
 
@@ -57,7 +57,7 @@ Para saber las diferencias de los ficheros entre su estado actual y el de la úl
 
 ## 2. Ramas
 
-
+.
 
 ## Referencias
 

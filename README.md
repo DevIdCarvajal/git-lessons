@@ -7,6 +7,6 @@
 
 ## Temario
 
-1. Introducción a Git
-2. Conceptos básicos de control de versiones
-3. BitBucket
+1. Introducción
+2. Trabajo en local
+3. Trabajo en remoto
