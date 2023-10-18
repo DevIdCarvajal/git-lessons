@@ -3,7 +3,8 @@
 ## Índice
 
 [1. Gestión de cambios](#1-gestión-de-cambios)  
-[2. Ramas](#2-ramas)
+[2. Ramas](#2-ramas)  
+[3. Etiquetas](#3-etiquetas)
 
 ## 1. Gestión de cambios
 
@@ -115,10 +116,37 @@ En algunos casos, cuando los cambios afectan a las mismas partes de los ficheros
 
 ## 3. Etiquetas
 
-.
+Es posible generar referencias a `commits` concretos conocidas como etiquetas, algo que generalmente se usa para identificar versiones del proyecto, de cara a su publicación.
+
+Estas etiquetas son similares a las ramas, salvo por el hecho de que no pueden cambiar, esto es, no se pueden hacer más `commits` sobre ellas.
+
+Para crear una etiqueta anotada (con todos los metadatos de autor, correo y fecha) con un mensaje asociado en el `commit` actual:
+
+    git tag -a v0.5 -m "Alpha version"
+
+O también como una etiqueta ligera (sin metadatos ni mensaje):
+
+    git tag v0.5.1
+
+Para etiquetar otro `commit` se indica el *hash* del mismo previamente localizado con `git log`:
+
+    git tag -a v0.2 15027957951b64cf874c3557a0f3547bd83b3ff6
+
+Para ver el estado del repositorio tal como se quedó cuando se le creó una etiqueta:
+
+    git checkout v0.5
+
+Se pueden ver las etiquetas creadas:
+
+    git tag
+
+Y borrarlas por su nombre:
+
+    git tag -d v0.5
 
 ## Referencias
 
 [La guía sencilla](https://rogerdudler.github.io/git-guide/index.es.html)  
 [Tutorial básico](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/tutorial-de-git/)  
-[Guardar cambios](https://www.atlassian.com/es/git/tutorials/saving-changes)
+[Guardar cambios](https://www.atlassian.com/es/git/tutorials/saving-changes)  
+[Etiquetado](https://www.atlassian.com/es/git/tutorials/inspecting-a-repository/git-tag)
