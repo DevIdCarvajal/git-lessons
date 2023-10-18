@@ -3,8 +3,7 @@
 ## Índice
 
 [1. Comunicación con servidor](#1-comunicación-con-servidor)  
-[2. Plataformas de desarrollo](#2-plataformas-de-desarrollo)  
-[X. Resumen del flujo de trabajo](#x-resumen-del-flujo-de-trabajo)
+[2. Plataformas de desarrollo](#2-plataformas-de-desarrollo)
 
 ## 1. Comunicación con servidor
 
@@ -17,19 +16,33 @@ Para el primer caso, se debe asociar el repositorio Git local a un servidor Git 
 
     git remote add origin urlRepositorio
 
-Para el segundo caso, se debe clonar el repositorio remoto al entorno local:
+Para el segundo caso, se debe clonar (el equivalente a descargar una copia idéntica) el repositorio remoto al entorno local:
 
     git clone urlRepositorio
 
-fetch, push y pull
+En cualquiera de los dos casos, Git enlaza un repositorio local con uno remoto, de manera que es posible actualizar los últimos cambios del servidor:
+
+    git pull
+
+Subir los cambios locales al servidor tras hacer un commit:
+
+    git push
+
+O ver los cambios sin aplicarlos:
+
+    git fetch
 
 ### Resumen del flujo de trabajo completo
 
 ![Flujo de trabajo](workflow.png)
 
-### [Trazabilidad y auditoría]
+### Trazabilidad y auditoría
 
-.
+Además de revisar el registro de commits con `git log` o con las etiquetas anotadas, que también guardan información sobre la autoría de los cambios y las versiones del proyecto, existe otro comando específicamente pensado para cuestiones de trazabilidad:
+
+    git blame hello.txt
+
+Este comando tiene varios opciones disponibles como ignorar cambios por espacios en blanco (`-w`), mostrar el email de los autores (`-e`), o líneas copiadas o movidas dentro del fichero (`-M`) o desde otros ficheros (`-C`).
 
 ## 2. Plataformas de desarrollo colaborativas
 
