@@ -81,7 +81,7 @@ Git permite **guardar temporalmente** los cambios no confirmados utilizando el c
      git stash list
      ```
 
-  3. **Recuperar los cambios guardados**: Puedes aplicar los cambios guardados en cualquier momento:
+  3. **Recuperar los cambios guardados manteniéndolos también en la pila**: Puedes aplicar los cambios guardados en cualquier momento, sin que estos desaparezcan de la pila:
      ```bash
      git stash apply
      ```
@@ -90,7 +90,12 @@ Git permite **guardar temporalmente** los cambios no confirmados utilizando el c
      git stash apply stash@{2}
      ```
 
-  4. **Eliminar un stash**: Una vez aplicados los cambios, puedes eliminar el stash correspondiente:
+  4. **Recuperar los últimos cambios guardados sacándolos de la pila**: También puedes aplicar los cambios que se guardaron en último lugar, haciendo que estos desaparezcan de la pila:
+     ```bash
+     git stash pop
+     ```
+
+  5. **Eliminar un stash**: Una vez aplicados los cambios, puedes eliminar el stash correspondiente:
      ```bash
      git stash drop stash@{0}
      ```
