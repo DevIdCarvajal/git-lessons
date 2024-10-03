@@ -49,7 +49,7 @@
       - Centralized Workflow
       - GitFlow
 
-# Recursos
+## Recursos
 
 [https://git-scm.com/]([https://git-scm.com/)  
 [https://github.com/progit/progit2-es]([https://github.com/progit/progit2-es)

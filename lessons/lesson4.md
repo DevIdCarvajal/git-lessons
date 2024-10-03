@@ -1,5 +1,9 @@
 # 4. Trabajo colaborativo
 
+- [Repositorios remotos](#repositorios-remotos)
+- [GitLab vs. GitHub](#gitlab-vs-github)
+- [Ejercicios](#ejercicios)
+
 ## Repositorios remotos
 
 Uno de los aspectos más poderosos de Git es su capacidad para trabajar de forma distribuida, permitiendo a múltiples personas colaborar en proyectos desde diferentes ubicaciones. Esto se logra mediante la sincronización de repositorios remotos. Un repositorio remoto es una copia del proyecto almacenada en un servidor que permite a los usuarios compartir cambios y colaborar de manera eficiente.
@@ -202,11 +206,8 @@ Cada miembro de la pareja (o trío, en su caso) deberá:
 5. Sincronizar los cambios del compañero y hacer `merge` de su rama creada con la principal en local. Resolver conflictos si los hubiese.
 6. Repetir todos los ejercicios anteriores con GitLab.
 
-#### Por equipos (de 3 o 4 personas)
+### Bonustrack
 
-```
-[WIP]
-- Forking Workflow
-- Centralized Workflow
-- GitFlow
-```
+1. Hacer un `fork` de un proyecto en GitHub de un compañero y *pushear* alguna modificación al repositorio *forkeado*.
+2. Hacer un `pull request` a un proyecto en GitHub de un compañero y que este lo acepte o rechace.
+3. Implementar una política de GitFlow en un repositorio propio en GitLab y hacer las operaciones necesarias para simular el ciclo completo de creación y despliegue de al menos una `feature` y un `hotfix`.
