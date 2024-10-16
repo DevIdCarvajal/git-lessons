@@ -136,7 +136,25 @@ El comando `git cherry-pick` permite aplicar un commit específico de otra rama 
   
 - **Advertencia**: Ten cuidado al usar este comando, ya que eliminará archivos permanentemente si no están siendo rastreados por Git.
 
-### 5. `revert`
+### 5. `reset`
+
+`git reset` es un comando que permite mover el puntero `HEAD` a un commit específico y cambiar el estado de los archivos en el área de trabajo. Existen cinco modos de `reset`, pero los más usados son los modos `--soft` y `--hard`.
+
+- **--soft**: Mueve el puntero `HEAD` al commit especificado, pero mantiene los cambios en el área de staging. Es útil cuando quieres rehacer los commits sin perder tus cambios.
+  ```bash
+  git reset --soft HEAD~1
+  ```
+  Esto deshace el último commit, pero mantiene los cambios en el área de staging, permitiéndote hacer un nuevo commit después.
+
+- **--mixed** (por defecto): Mueve el puntero `HEAD` al commit especificado y deshace los cambios en el área de staging, pero deja intactos los archivos modificados en tu directorio de trabajo.
+- **--hard**: Mueve el puntero `HEAD` al commit especificado y deshace todos los cambios tanto en el área de staging como en el directorio de trabajo. Es irreversible, por lo que debes usarlo con precaución.
+  ```bash
+  git reset --hard HEAD~1
+  ```
+  Esto deshace el último commit y borra todos los cambios no comprometidos del área de staging y del directorio de trabajo.
+- **--merge** y **--keep**: Son opciones avanzadas que se utilizan para conservar o descartar cambios no fusionados durante el proceso de reset.
+
+### 6. `revert`
 
 `git revert` es una manera segura de deshacer cambios en el historial sin reescribir el historial de commits. A diferencia de `reset`, que puede eliminar commits, `revert` crea un nuevo commit que invierte los cambios del commit especificado.
 
@@ -149,9 +167,16 @@ El comando `git cherry-pick` permite aplicar un commit específico de otra rama 
   - Mantiene el historial intacto.
   - Ideal en situaciones donde se trabaja en equipo y los commits ya han sido compartidos.
 
-### 6. `rebase`
+### 7. `rebase`
 
 El comando `git rebase` es un comando avanzado que permite reorganizar los commits aplicándolos sobre otro commit base. Se utiliza para limpiar el historial y crear una secuencia de commits más lineal y comprensible.
+
+- **Uso típico**: Si estás trabajando en una rama `feature` y quieres incorporar los últimos cambios de `main`, puedes hacer lo siguiente:
+  ```bash
+  git checkout feature
+  git rebase main
+  ```
+  Esto moverá los commits de `feature` sobre la rama `main`, creando un historial lineal en lugar de fusionar con un commit de merge.
 
 - **Rebase interactivo**: Un uso poderoso de `rebase` es el rebase interactivo, que te permite modificar, reordenar o eliminar commits.
   ```bash
@@ -170,3 +195,9 @@ El comando `git rebase` es un comando avanzado que permite reorganizar los commi
 1. Instalar Gitk, DiffMerge, SmartGit, GitKraken y SourceTree y explorar las distintas herramientas para realizar y entender las operaciones básicas vistas hasta ahora: `commits`, `tags`, `diffs`, ramas, etc.
 2. Hacer `cherry-picking` desde un `commit` de una rama a otro `commit` de otra rama.
 3. Usar al menos una vez cada uno de los otros comandos avanzados vistos hasta ahora. Por cada uso, hacer los `diffs` necesarios para entender lo que cada comando hace exactamente.
+
+## Recursos
+
+- [Visualizing Git](https://git-school.github.io/visualizing-git/)
+- [Explain Git with D3](https://onlywei.github.io/explain-git-with-d3/)
+- [Git reset y revert (freecodecamp)](https://www.freecodecamp.org/espanol/news/la-guia-definitiva-para-git-reset-y-git-revert/)

@@ -211,3 +211,8 @@ Cada miembro de la pareja (o trío, en su caso) deberá:
 1. Hacer un `fork` de un proyecto en GitHub de un compañero y *pushear* alguna modificación al repositorio *forkeado*.
 2. Hacer un `pull request` a un proyecto en GitHub de un compañero y que este lo acepte o rechace.
 3. Implementar una política de GitFlow en un repositorio propio en GitLab y hacer las operaciones necesarias para simular el ciclo completo de creación y despliegue de al menos una `feature` y un `hotfix`.
+
+## Recursos
+
+- [Skills Github](https://skills.github.com/)
+- [Git History](https://githistory.xyz/)

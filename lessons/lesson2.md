@@ -161,3 +161,8 @@ Las **ramas** (*branches* en inglés) en Git son fundamentales para el trabajo e
  - Para crear una rama nueva y cambiarse a ella en un solo paso.
 2. Etiquetado de dos versiones del proyecto, siendo una el primer `commit` y otra el tercero.
 3. Crear una rama a partir de `main` llamada `first-revision` , modificar alguna de las tres entradas del cuaderno de bitácora y hacer `merge` de esos cambios a `main` .
+
+## Recursos
+
+- [Git Gud](https://nic-hartley.github.io/git-gud/)
+- [Learn Git Branching](https://learngitbranching.js.org/?locale=es_ES)

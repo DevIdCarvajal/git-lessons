@@ -51,16 +51,7 @@
 
 ## Recursos
 
-[https://git-scm.com/]([https://git-scm.com/)  
-[https://github.com/progit/progit2-es]([https://github.com/progit/progit2-es)
-
-[https://training.github.com/downloads/es_ES/subversion-migration/]([https://training.github.com/downloads/es_ES/subversion-migration/)  
-[https://rogerdudler.github.io/git-guide/index.es.html]([https://rogerdudler.github.io/git-guide/index.es.html)  
-[https://learngitbranching.js.org/?locale=es_ES]([https://learngitbranching.js.org/?locale=es_ES)  
-[https://onlywei.github.io/explain-git-with-d3/]([https://onlywei.github.io/explain-git-with-d3/)  
-[https://git-school.github.io/visualizing-git/]([https://git-school.github.io/visualizing-git/)  
-[https://nic-hartley.github.io/git-gud/]([https://nic-hartley.github.io/git-gud/)  
-[https://githistory.xyz/]([https://githistory.xyz/)
-
-[https://skills.github.com/]([https://skills.github.com/)  
-[https://docs.github.com/es/get-started/getting-started-with-git]([https://docs.github.com/es/get-started/getting-started-with-git)
+- [Página oficial](https://git-scm.com/)
+- [Pro Git](https://github.com/progit/progit2-es)
+- [Git - La guía sencilla](https://rogerdudler.github.io/git-guide/index.es.html)
+- [Getting started with Git](https://docs.github.com/es/get-started/getting-started-with-git)

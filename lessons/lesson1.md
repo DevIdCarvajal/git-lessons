@@ -83,24 +83,21 @@ Git es un sistema distribuido de control de versiones que permite a múltiples d
 
 ## Creación de un repositorio local
 
-1. **Inicialización de un repositorio**:
-   - Para comenzar a utilizar Git en un proyecto, debes inicializar un repositorio en la carpeta correspondiente:
-     ```bash
-     git init
-     ```
-   - Esto crea un directorio oculto llamado `.git`, que contiene todos los archivos necesarios para el control de versiones.
+1. **Inicialización de un repositorio**: Para comenzar a utilizar Git en un proyecto, debes inicializar un repositorio en la carpeta correspondiente:
+    ```bash
+    git init
+    ```
+    Esto crea un directorio oculto llamado `.git`, que contiene todos los archivos necesarios para el control de versiones.
 
-2. **Añadir archivos al repositorio**:
-   - Después de inicializar el repositorio, puedes agregar archivos para que Git comience a rastrearlos:
-     ```bash
-     git add <archivo>
-     ```
+2. **Añadir archivos al repositorio**: Después de inicializar el repositorio, puedes agregar archivos para que Git comience a rastrearlos:
+    ```bash
+    git add <archivo>
+    ```
 
-3. **Confirmar cambios (commit)**:
-   - Una vez añadidos los archivos, debes "confirmar" los cambios para que Git los registre en su historial:
-     ```bash
-     git commit -m "Descripción de los cambios"
-     ```
+3. **Confirmar cambios (commit)**: Una vez añadidos los archivos, debes "confirmar" los cambios para que Git los registre en su historial:
+    ```bash
+    git commit -m "Descripción de los cambios"
+    ```
 
 ## Ciclo de vida de ficheros locales
 
@@ -139,3 +136,8 @@ El ciclo de vida de los archivos en Git puede entenderse a través de los siguie
 1. Instalar Git y crear un repositorio local para un proyecto llamado `moby-git` .
 2. Versionar un cuaderno de bitácora que tenga tres entradas con diferentes contenidos de texto escritas en Markdown, cada una de ellas versionada con un `commit` diferente. En la segunda, además de texto, debe haber una imagen.
 3. Comparar el contenido del primer y el tercer `commit` .
+
+## Recursos
+
+- [Subversion migration](https://training.github.com/downloads/es_ES/subversion-migration/)
+- [Install Git on Windows](https://zaycodes.medium.com/how-to-install-git-on-windows-f6031afef08c)
