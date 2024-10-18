@@ -93,6 +93,10 @@ El comando `git clone` crea una copia de un repositorio remoto en tu máquina lo
   ```bash
   git fetch origin
   ```
+  O simplemente:
+  ```bash
+  git fetch
+  ```
 
 #### c. `push`
 
@@ -101,6 +105,14 @@ El comando `git clone` crea una copia de un repositorio remoto en tu máquina lo
 - **Uso**:
   ```bash
   git push origin <nombre-de-la-rama>
+  ```
+  O simplemente:
+  ```bash
+  git push
+  ```
+  Si se quiere hacer `push` de una rama que se creó localmente y no existe en remoto:
+  ```bash
+  git push --set-upstream origin feature
   ```
 
 #### d. `pull`
@@ -111,6 +123,13 @@ El comando `git clone` crea una copia de un repositorio remoto en tu máquina lo
   ```bash
   git pull origin <nombre-de-la-rama>
   ```
+  O simplemente:
+  ```bash
+  git pull
+  ```
+### Flujo completo de Git
+
+![Git Full Workflow](git-full-workflow.png)
 
 ## GitLab vs. GitHub
 
@@ -146,7 +165,7 @@ Los flujos de trabajo en Git son patrones establecidos que los equipos siguen pa
 
 #### a. Forking Workflow
 
-El flujo de trabajo de forking es común en proyectos de código abierto. Cada colaborador realiza un "fork" (una copia del repositorio) y trabaja en sus propios cambios antes de enviar un "pull request" para que los cambios sean revisados e integrados.
+El flujo de trabajo de forking es común en proyectos de código abierto. Cada colaborador realiza un "fork" (una copia del repositorio) y trabaja en sus propios cambios antes de enviar un *pull request* para que los cambios sean revisados e integrados.
 
 - **Características**:
   - Cada desarrollador tiene su propia copia del repositorio.
@@ -155,7 +174,9 @@ El flujo de trabajo de forking es común en proyectos de código abierto. Cada c
 
 - **Ventajas**:
   - Ideal para proyectos públicos donde se busca mantener un control estricto sobre qué cambios se integran.
-  
+
+![Pull request](pull-request.png)
+
 #### b. Centralized Workflow
 
 Este flujo de trabajo simula el tradicional modelo centralizado de control de versiones (como SVN), donde todos los desarrolladores trabajan directamente en una sola rama, a menudo `main` o `master`.
@@ -184,6 +205,8 @@ GitFlow es un flujo de trabajo avanzado que utiliza varias ramas para organizar 
 - **Desventajas**:
   - Requiere más esfuerzo para la administración de ramas.
   - Puede ser excesivo para proyectos pequeños o simples.
+
+![GitFlow](gitflow.png)
 
 ## Ejercicios
 

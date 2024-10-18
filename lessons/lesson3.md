@@ -80,6 +80,14 @@ SourceTree es una herramienta gratuita para Git desarrollada por Atlassian, cono
   - Ideal para principiantes y usuarios intermedios.
   - Buena integración con plataformas populares de alojamiento de repositorios.
 
+### 6. Extensiones de Visual Studio Code
+
+- [git-graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- [githistory](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+- [gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [meld-diff](https://marketplace.visualstudio.com/items?itemName=danielroedl.meld-diff)
+- [vscode-diff](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-diff)
+
 ## Cherry-picking y otros comandos avanzados
 
 Git no solo proporciona comandos básicos, sino que también cuenta con una serie de comandos avanzados que permiten un control más granular sobre los commits, la historia, y la limpieza del repositorio.

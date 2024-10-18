@@ -126,10 +126,12 @@ El ciclo de vida de los archivos en Git puede entenderse a través de los siguie
 ### Comandos básicos
 
 - `git add`: Mueve los cambios de archivos al área de staging.
+- `git reset`: Saca los cambios de archivos del área de staging.
+- `git rm --cached`: No hace seguimiento de un archivo, conservándolo en la carpeta de trabajo (es decir, lo ignora).
 - `git commit`: Confirma los cambios en el historial.
 - `git status`: Muestra el estado del repositorio (qué archivos han cambiado, están listos para ser confirmados, etc.).
 - `git log`: Muestra el historial de commits del repositorio.
-- `git diff`: Muestra las diferencias entre archivos en distintas versiones o en el área de staging.
+- `git diff`: Muestra las diferencias entre archivos en distintas versiones o en el área de staging (`diff --staged`).
 
 ## Ejercicios
 
