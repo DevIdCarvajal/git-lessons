@@ -105,19 +105,19 @@ Git es un sistema distribuido de control de versiones que permite a múltiples d
 
 El ciclo de vida de los archivos en Git puede entenderse a través de los siguientes estados:
 
-1. **Untracked**: Un archivo que no está siendo rastreado por Git. Es nuevo o ha sido modificado pero no añadido al control de versiones.
+1. **Sin seguimiento (untracked)**: Un archivo que no está siendo rastreado por Git. Es nuevo o ha sido modificado pero no añadido al control de versiones.
    - Comando relevante:
      ```bash
      git status
      ```
 
-2. **Staged**: El archivo ha sido modificado y añadido a la "staging area" para su inclusión en el próximo commit.
+2. **Pendiente de confirmación (staged)**: El archivo ha sido modificado y añadido a la *staging* area para su inclusión en el próximo `commit`.
    - Comando relevante:
      ```bash
      git add <archivo>
      ```
 
-3. **Committed**: El archivo ha sido confirmado en el historial de Git, creando una nueva versión en el repositorio.
+3. **Confirmado (committed)**: El archivo ha sido confirmado en el historial de Git, creando una nueva versión en el repositorio.
    - Comando relevante:
      ```bash
      git commit -m "Descripción del cambio"
@@ -127,7 +127,7 @@ El ciclo de vida de los archivos en Git puede entenderse a través de los siguie
 
 - `git add`: Mueve los cambios de archivos al área de staging.
 - `git reset`: Saca los cambios de archivos del área de staging.
-- `git rm --cached`: No hace seguimiento de un archivo, conservándolo en la carpeta de trabajo (es decir, lo ignora).
+- `git restore`: Restaura los archivos al estado del último commit, eliminando todos los cambios en el directorio de trabajo.
 - `git commit`: Confirma los cambios en el historial.
 - `git status`: Muestra el estado del repositorio (qué archivos han cambiado, están listos para ser confirmados, etc.).
 - `git log`: Muestra el historial de commits del repositorio.

@@ -38,18 +38,23 @@ Las **etiquetas** o **tags** en Git son marcadores que se utilizan para señalar
 - **¿Por qué usar tags?**: Los tags son útiles para identificar versiones específicas de tu proyecto, como una versión de producción estable. En equipos, es común que se use una etiqueta para señalar la versión que ha sido lanzada.
 
 - **Tipos de etiquetas en Git**:
-  1. **Lightweight tags**: Simplemente una referencia a un commit.
+  1. **Ligeras**: Simplemente una referencia a un commit.
      ```bash
-     git tag v1.0
+     git tag v0.5
      ```
-  2. **Annotated tags**: Estas contienen más información, como el nombre del autor, fecha y un mensaje.
+  2. **Anotadas**: Estas contienen más información, como el nombre del autor, fecha y un mensaje.
      ```bash
-     git tag -a v1.0 -m "Versión estable 1.0"
+     git tag -a v1.0 -m "Production version v1.0"
      ```
 
 - **Ver todas las etiquetas**: Para ver una lista de todas las etiquetas creadas en tu repositorio:
   ```bash
   git tag
+  ```
+
+- **Ver el detalle de etiquetas anotadas**: Para ver el mensaje y otros datos de una etiqueta anotada:
+  ```bash
+  git show v1.0
   ```
 
 - **Publicar etiquetas en un repositorio remoto**: Después de crear una etiqueta, es necesario enviarla al repositorio remoto:
