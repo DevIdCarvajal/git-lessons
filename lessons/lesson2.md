@@ -2,7 +2,7 @@
 - [Configuración inicial](#configuración-inicial)
 - [Creación de un nuevo repositorio Git](#creación-de-un-nuevo-repositorio-Git)
 - [Estructura de un repositorio Git](#estructura-de-un-repositorio-Git)
-- [Comandos básicos](#cmandos-básicos)
+- [Comandos básicos](#comandos-básicos)
 - [Ejercicios](#ejercicios)
 
 ## Configuración inicial
