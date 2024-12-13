@@ -8,11 +8,11 @@
 
 ## Estrategias de branching
 
-[...]
+![Git Flow](gitflow.png)
 
 ## Creación y gestión de Pull Requests
 
-[...]
+![Pull Request](pull-request.png)
 
 ## Revisión de código y colaboración en equipo
 

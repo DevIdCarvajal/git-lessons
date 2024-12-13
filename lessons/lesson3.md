@@ -96,6 +96,10 @@ Es una combinación de `fetch` y `merge`. Descarga los cambios del repositorio r
   git pull
   ```
 
+### Flujo completo de Git
+
+![Git Full Workflow](git-full-workflow.png)
+
 ## Ejercicios
 
 1. Clonar el repositorio de `progit` en español.

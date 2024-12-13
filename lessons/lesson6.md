@@ -14,7 +14,19 @@
 
 ### `git checkout`
 
-[...]
+Es un comando que permite mover el puntero `HEAD` a un commit específico, aunque también se le puede indicar una referencia, como puede ser un tag o un nombre de rama.
+
+  ```bash
+  git checkout 5f1ab38
+  git checkout main
+  git checkout v0.3
+  ```
+
+También se puede crear y cambiar a una nueva rama en un solo paso:
+
+  ```bash
+  git checkout -b feature1
+  ```
 
 ### `git reset`
 
